@@ -1,23 +1,23 @@
 #Pig Latin em Python :D
-#Pig Latin È um jogo onde a primeira letra da palavra È colocada no final da mesma, acrescentando o sufixo "ay"
+#Pig Latin √© um jogo onde a primeira letra da palavra √© colocada no final da mesma, acrescentando o sufixo "ay"
 #exemplo Python -> ythonpay
 
 print ("Bem-vindo ao tradutor Pig Latin!")
 
-pyg = "ay"	#sufixo
+pyg = "ay"
 
-original = raw_input("Digite uma palavra: ")
+original = input("Digite uma palavra: ")
 
 
-if len(original) > 0 and original.isalpha():	#verifica se a palavra foi digitada e È formada somente letras
-	word = original.lower()			#deixa a palavra digitada em min˙sculas
+if len(original) > 0 and original.isalpha():	#verifica se a palavra foi digitada e √© formada somente por letras
+	word = original.lower()			#deixa a palavra em min√∫sculas
 	first = word[0]				#armazena a primeira letra da palavra
 	new_word = word + first + pyg		#concatena strings para formar a palavra em Pig Latin
-	new_word = new_word[1:len(new_word)]	#fatia a string para n„o mostrar a primeira letra					
+	new_word = new_word[1:len(new_word)]	#fatia a string para n√£o mostrar a primeira letra					
 
-	print("TraduÁ„o: ", new_word)
+	print("Tradu√ß√£o: ", new_word)
 else:
-	print("Vazio ou uso de caracteres que n„o s„o letras")
+	print("Vazio ou uso de caracteres que n√£o s√£o letras")
 
 
 
